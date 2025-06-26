@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +7,13 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header></header>
+    <main>    
+        <h1 id="comprimento">Hello, World!</h1>
+
+        <section id="sessao-posts"></section>
+    </main>
+    <script src="{% static 'posts/js/script.js' %}"></script>
+    <footer></footer>
 </body>
 </html>
