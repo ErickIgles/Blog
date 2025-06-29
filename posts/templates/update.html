@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de postagem</title>
+</head>
+<body>
+    <div id="mensagem"></div>
+    <main class="postagem">
+        <form id="form-editar">
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br><br>
+
+            <label for="imagem">Imagem atual:</label><br>
+            <img id="preview-imagem" src="" alt="" width="200"><br>
+
+            <label for="imagem">Alterar imagem</label><br>
+            <input type="file" id="imagem" accept="image/*"><br><br>
+            
+            <label for="conteudo">Conteúdo:</label><br>
+            <textarea id="conteudo" name="conteudo" rows="6" cols="50"></textarea><br>
+
+            <br>
+            <button type="submit" id="atualizar_postagem">Salvar</button>
+        </form>            
+    </main>
+    <script src="{% static 'posts/js/post_update.js' %}"></script>
+    <footer></footer>
+</body>
+</html>
