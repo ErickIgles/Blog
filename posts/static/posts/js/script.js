@@ -13,10 +13,10 @@ async function buscarPosts() {
         
         posts.forEach(post => {
             const link = document.createElement('a');
-            link.href = `/posts/${post.id}/`;
+            link.href = `/posts/detail/${post.id}/`;
             link.classList.add('card');
             
-            link.innerHTML = `<img src="${post.post_image}" alt="Imagem de ${post.title}">`
+            link.innerHTML = `<img src="${post.post_image}" alt="Imagem de ${post.title}" width="200"><br><br>`
 
             containerPosts.appendChild(link);
         });
